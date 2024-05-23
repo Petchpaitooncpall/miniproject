@@ -18,8 +18,8 @@
   2.7) npm i jquery<br>
   2.8) npm i create-react-app<br>
   2.9) npm i nodemon หรือ npm start<br>
-3.ให้ทำการสั่งคำสั่งที่ terminal หรือ command line ว่า npm create-react-app frontend จากนั้นเมื่อติดตั้ง react เสร็จก็ให้สั่งทำการ npx nodemon ระบบก็จะสามารถเข้าหน้าเว็บไปที่ fronend ของ port 3001 อัตโนมัติ<br>
-4.จากนั้นก็จะเข้าสู่่หน้า login ให้ทำการ register ลงทะเบียนจาก ปุ่ม register เพื้อไปสร้าง username และ password ก่อน<br>
+3.ให้ทำการสั่งคำสั่งที่ terminal หรือ command line ว่า npm create-react-app frontend จากนั้นเมื่อติดตั้ง react เสร็จก็ให้สั่งทำการ npx nodemon ระบบก็จะสามารถเข้าหน้าเว็บไปที่ fronend ของ port 3001 คือ http://localhost:3000 อัตโนมัติ<br>
+4.จากนั้นก็ เราจะมาที่หน้า backend นั้นคือ http://localhost:3001 ก็จะเข้าสู่่หน้า login ให้ทำการ register ลงทะเบียนจาก ปุ่ม register เพื้อไปสร้าง username และ password ก่อน<br>
 5.จากนั้นทำการ login และเข้าไปที่หน้า dashboard ซึ่งจะไม่มีข้อมูลที่ฐานข้อมูลอะไร ให้ทำการคลิกปุ่ม เพิ่มสินค้า และใส่รายละเอียดเสร็จแล้วบันทึก<br>
 6.จากนั้นจะทำการกลับมาหน้า dashboard ก็จะเห็นข้อมูล รายละเอียดสินค้าเป็นตาราง<br>
 7.และถ้ากดปุ่ม logout ก็จะออก และลบ session ทิ้งไป หรือ จะรอประมาณ 1 ชั่วโมง ก็จะออกครับ<br><br>
