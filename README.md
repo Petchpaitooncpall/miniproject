@@ -1,7 +1,10 @@
 # miniproject
-<b>ส่งงาน miniproject โดย เพชรไพฑูรย์ ศรีเมือง รหัส 7727031</b>
+<b>ส่งงาน miniproject</b>
 
 ชื่อ project : โปรแกรมระบบหลังบ้าน การจัดการสินค้า<br>
+โดย เพชรไพฑูรย์ ศรีเมือง รหัส 7727031<br>
+หน่วยงาน SOD<br>
+ฟีเจอร์ node js<br>
 <br>
 วิธีการใช้งาน คือ <br>
 1.ให้ติดตั้ง phpmyadmin เพื่อทำการ import file .sql เข้าที่ database ของเรา ซึ่งไฟล์จะอยู่ที่ folder ชื่อ database_install ให้ติดตั้งจากคู่มือด้านใน<br>
