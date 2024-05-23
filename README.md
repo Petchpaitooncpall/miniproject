@@ -14,7 +14,7 @@
   2.6) npm i ejs<br>
   2.7) npm i jquery<br>
   2.8) npm i create-react-app<br>
-  2.9) npm i nodemon<br>
+  2.9) npm i nodemon หรือ npm start<br>
 3.ให้ทำการสั่งคำสั่งที่ terminal หรือ command line ว่า npx nodemon<br>
 4.จากนั้นก็จะเข้าสู่่หน้า login ให้ทำการ register ลงทะเบียนจาก ปุ่ม register เพื้อไปสร้าง username และ password ก่อน<br>
 5.จากนั้นทำการ login และเข้าไปที่หน้า dashboard ซึ่งจะไม่มีข้อมูลที่ฐานข้อมูลอะไร ให้ทำการคลิกปุ่ม เพิ่มสินค้า และใส่รายละเอียดเสร็จแล้วบันทึก<br>
