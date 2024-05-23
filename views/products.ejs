@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <!-- javascript creater -->
+        <script src="/javascripts/jquery.js"></script>
+        <script src="/javascripts/javascript.js"></script>
+    </head>
+    <body class="container-fluid text-center body">
+
+        <section class="min-vh-100">
+            <div class="row p-4">
+                <div class="col box_form box_top box_margin p-4">
+                    <a class="btn btn-primary link-offset-2 link-underline link-underline-opacity-0 mb-4" href="/dashboard">กลับหน้าหลัก</a>
+                    <p class="fs-2 fw-bold pt-4"><%= txt_pro %></p>
+
+                    <% 
+                        if(status_code == 1)
+                    {
+                    %>
+                            <div class="row text-center py-4 px-4 pt-2 pb-2" id="show_reg_success">
+                                <div class="col alert alert-success">
+                                    <span class="fs-4 fw-bold text-success">ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว</span>
+                                </div>    
+                            </div>
+                    <%
+                        }
+                        else if(status_code == 2)
+                        {
+                    %>  
+                            <div class="row text-center py-4 px-4 pt-2 pb-2" id="show_reg_fail">
+                                <div class="col alert alert-danger">
+                                    <span class="fs-4 fw-bold text-danger">ไม่สามารถทำการบันทึกข้อมูลได้ กรุณากรอกข้อมูลอีกครั้ง</span>
+                                </div>    
+                            </div>
+
+                    <%
+                        }
+                    %>
+
+                    <form action="/product" method="post" enctype="application/x-www-form-urlencoded">
+                        <div class="row mt-2">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold" id="basic-addon1">รหัสสินค้า : </span>
+                                    <input name="product_id" type="text" class="form-control" placeholder="กรุณาใส่ รหัสสินค้า" aria-label="product_id" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold" id="basic-addon1">ชื่อสินค้า : </span>
+                                    <input name="product_name" type="text" class="form-control" placeholder="กรุณาใส่ชื่อสินค้า" aria-label="product_name" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold" id="basic-addon1">ราคา : </span>
+                                    <input name="product_price" type="number" inputmode="numeric" pattern="[0-9]*" class="form-control" placeholder="กรุณาใส่ราคาสินค้า ด้วยตัวเลขเท่านั้น" aria-label="product_price" aria-describedby="basic-addon1">
+                                </div>
+                                <input type="submit" class="btn btn-success mt-4 mx-2 bt_size" value="ยืนยัน" />
+                                <input type="reset" class="btn btn-danger mt-4 mx-2 bt_size" value="ล้างข้อมูล">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
